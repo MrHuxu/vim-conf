@@ -142,7 +142,8 @@ let g:airline_powerline_fonts=1
 "setfillchars+=stl:\ ,stlnc:\
 
 " 设置MacVim字体
-se guifont=Source\ Code\ Pro\ for\ Powerline:h14  
+"se guifont=Source\ Code\ Pro\ for\ Powerline:h14  
+se guifont=CosmicSansNeueMono:h17
 
 " 设置Rsense 插件
 "let g:rsenseHome = "/usr/lib/rsense-0.3"　
