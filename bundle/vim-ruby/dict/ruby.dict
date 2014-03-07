@@ -162,6 +162,7 @@ empty?
 enable
 enclose
 enclosed?
+encoding
 end
 entries
 eof
