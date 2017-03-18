@@ -196,3 +196,28 @@ set mouse=a
 set selection=exclusive
 set selectmode=mouse,key
 inoremap ' ''<ESC>i
+
+" map F6 to compile and execute the current file
+map <F6> :call Runit()<CR>
+func! Runit()
+  if &filetype == 'c'
+    exec "!clang  % -o %<"
+    exec "! ./%<"
+  elseif &filetype == 'cpp'
+    exec "!clang++ % -o %<"
+    exec "! ./%<"
+  elseif &filetype == 'java'
+    exec "!javac %"
+    exec "!java %<"
+  elseif &filetype =='python'
+    exec "!python %"
+  elseif &filetype=='ruby'
+    exec "!ruby %"
+  elseif &filetype=='javascript'
+    exec "!node %"
+  elseif &filetype=='sh'
+    exec "!sh %"
+  elseif &filetype=='go'
+    exec "!go run %"
+  endif
+endfunc
