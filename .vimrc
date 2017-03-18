@@ -12,6 +12,21 @@ Plug 'mxw/vim-jsx'
 Plug 'isRuslan/vim-es6'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'junegunn/goyo.vim'
+
+
+Plug 'ayu-theme/ayu-vim'
+set termguicolors          " enable true colors support
+let ayucolor="mirage"      " for mirage version of theme
+colorscheme ayu
+
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+Plug 'shime/vim-livedown'
+set conceallevel=2
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_new_list_item_indent = 2
 
 
 Plug 'Shougo/neocomplete.vim'
@@ -24,8 +39,10 @@ let g:neocomplete#sources#syntax#min_keyword_length = 3   " set minimum syntax k
 Plug 'scrooloose/nerdtree'
 let NERDTreeShowBookmarks = 1
 let NERDChristmasTree = 1
-let NERDTreeWinPos = "left"                " NERDTree window location
-nnoremap <c-n> :exe 'NERDTreeToggle'<CR>   " map Ctrl-n to toggle NERDTree
+" NERDTree window location
+let NERDTreeWinPos = "left"
+" map Ctrl-n to toggle NERDTree
+nnoremap <c-n> :exe 'NERDTreeToggle'<CR>
 
 
 Plug 'xolox/vim-easytags'
@@ -52,14 +69,13 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 
 
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'vim-scripts/taglist.vim'
 Plug 'majutsushi/tagbar'
-nmap <c-t> :TagbarToggle<CR>   " map Ctrl-t to TagBar
-
+" map Ctrl-t to TagBar
+nmap <c-t> :TagbarToggle<CR>
 
 
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+" find C-t mapping and change it to avoid conflicts with TagBar
 autocmd FileType go nmap <leader>t   <Plug>(go-test)
 autocmd FileType go nmap <leader>b   <Plug>(go-build)
 autocmd FileType go nmap <leader>r   <Plug>(go-run)
@@ -68,12 +84,14 @@ autocmd FileType go nmap <leader>b   <Plug>(go-build)
 
 
 Plug 'mileszs/ack.vim'
-nmap <c-a> :Ack<space>   " map Ctrl-f to Ack
+" map Ctrl-f to Ack
+nmap <c-a> :Ack<space>
 
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-nmap <c-p> :FZF<enter>   " map Ctrl+p to FZF
+" map Ctrl+p to FZF
+nmap <c-p> :FZF<enter>
 
 
 Plug 'pangloss/vim-javascript'
@@ -113,6 +131,12 @@ let g:ale_statusline_format = ['✖ %d', '⚠ %d', '']
 
 Plug 'vim-airline/vim-airline'
 set laststatus =2                                        " make airline show up
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep = ''
 let g:airline#extensions#tabline#enabled = 1             " enable the extension tabline
 let g:airline#extensions#ale#enabled = 1                 " enable the extension ale
 let g:airline_section_error = '%{ALEGetStatusLine()}'    " show ale validate results in airline
