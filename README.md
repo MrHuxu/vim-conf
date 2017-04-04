@@ -17,7 +17,7 @@ Maintain the Vim configuration of mine.
 2. Remove `.vimrc` & `.vim` directory
 3. Clone this repo
 
-        git clone https://github.com/MrHuxu/dotfiles.git
+        git clone https://github.com/MrHuxu/vim-conf.git
 
 4. Install the font [Source Code Pro](https://github.com/powerline/fonts/blob/master/SourceCodePro/Sauce%20Code%20Powerline%20Regular.otf)
 5. Install Vim plugins:
