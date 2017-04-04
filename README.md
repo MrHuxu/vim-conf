@@ -1,4 +1,4 @@
-# Dotfiles of xhu
+# Vim Configuration of xhu
 
 ## Description
 
@@ -19,7 +19,7 @@ Maintain the Vim configuration of mine.
 
         git clone https://github.com/MrHuxu/dotfiles.git
 
-4. Install the font: `dotfiles/powerline-fonts-master/SourceCodePro/Sauce Code Powerline Regular.otf`
+4. Install the font [Source Code Pro](https://github.com/powerline/fonts/blob/master/SourceCodePro/Sauce%20Code%20Powerline%20Regular.otf)
 5. Install Vim plugins:
 
         cp .vimrc ~/.vimrc
