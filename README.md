@@ -19,7 +19,7 @@ Maintain the Vim configuration of mine.
 
         git clone https://github.com/MrHuxu/vim-conf.git
 
-4. Install the font [Source Code Pro](https://github.com/powerline/fonts/blob/master/SourceCodePro/Sauce%20Code%20Powerline%20Regular.otf)
+4. Install the font [Source Code Pro](https://github.com/powerline/fonts/blob/master/SourceCodePro/Source%20Code%20Pro%20for%20Powerline.otf)
 5. Install Vim plugins:
 
         cp .vimrc ~/.vimrc
@@ -33,7 +33,7 @@ Maintain the Vim configuration of mine.
 
 7. Update `vim-go` to avoid hotkey conflicts:
 
-        " update ~/.vim/plugged/vim-go/ftplugin/go.vim:38
+        " update ~/.vim/plugged/vim-go/ftplugin/go.vim:40
         -  nnoremap <buffer> <silent> <C-t> :<C-U>call go#def#StackPop(v:count1)<cr>
         +  nnoremap <buffer> <silent> <C-s> :<C-U>call go#def#StackPop(v:count1)<cr>
 
