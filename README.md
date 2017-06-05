@@ -9,7 +9,6 @@ Maintain the Vim configuration of mine.
 1. Vim(8.0 or higher)
 2. fzf
 3. ctags
-4. Golang executable [libraries](https://github.com/Microsoft/vscode-go#go-for-visual-studio-code)
 
 ## Install
 
@@ -17,7 +16,7 @@ Maintain the Vim configuration of mine.
 2. Remove `.vimrc` & `.vim` directory
 3. Clone this repo
 
-        git clone https://github.com/MrHuxu/vim-conf.git
+        git clone https://github.com/MrHuxu/vim-conf.git && cd vim-conf
 
 4. Install the font [Source Code Pro](https://github.com/powerline/fonts/blob/master/SourceCodePro/Source%20Code%20Pro%20for%20Powerline.otf)
 5. Install Vim plugins:
