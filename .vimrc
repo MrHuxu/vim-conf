@@ -167,6 +167,10 @@ set noswapfile
 set ignorecase
 set hlsearch
 
+" hightlight the current row & column
+se cursorline
+se cursorcolumn
+
 " use F2 to enable the paste mode
 nnoremap <F2> :set invpaste paste?<CR>
 imap <F2></F2> :set invpaste paste?<CR>
