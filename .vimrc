@@ -98,23 +98,6 @@ Plug 'pangloss/vim-javascript'
 set conceallevel=1
 let g:javascript_conceal_arrow_function="⇒"
 
-
-Plug 'terryma/vim-multiple-cursors'
-let g:multi_cursor_next_key='<C-d>'
-" Called once right before you start selecting multiple cursors
-function! Multiple_cursors_before()
-  if exists(':NeoCompleteLock')==2
-    exe 'NeoCompleteLock'
-  endif
-endfunction
-" Called once only when the multiple selection is canceled (default <Esc>)
-function! Multiple_cursors_after()
-  if exists(':NeoCompleteUnlock') == 2
-    exe 'NeoCompleteUnlock'
-  endif
-endfunction
-
-
 Plug 'w0rp/ale'
 let &runtimepath.=',~/.vim/plugged/ale'
 let g:ale_lint_on_save = 1
@@ -139,7 +122,6 @@ let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
 let g:airline#extensions#tabline#enabled = 1             " enable the extension tabline
 let g:airline#extensions#ale#enabled = 1                 " enable the extension ale
-let g:airline_section_error = '%{ALEGetStatusLine()}'    " show ale validate results in airline
 
 
 call plug#end()

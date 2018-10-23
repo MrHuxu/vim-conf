@@ -13,6 +13,10 @@ Maintain the Vim configuration of mine.
 ## Install
 
 1. Install neccesary dependencies
+
+        brew install fzf ctags
+        brew install vim --with-lua --with-override-system-vi
+
 2. Remove `.vimrc` & `.vim` directory
 3. Clone this repo
 
@@ -29,12 +33,6 @@ Maintain the Vim configuration of mine.
 
         mkdir ~/.vim/colors
         cp ~/.vim/plugged/ayu-vim/colors/ayu.vim ~/.vim/colors
-
-7. Update `vim-go` to avoid hotkey conflicts:
-
-        " update ~/.vim/plugged/vim-go/ftplugin/go.vim:40
-        -  nnoremap <buffer> <silent> <C-t> :<C-U>call go#def#StackPop(v:count1)<cr>
-        +  nnoremap <buffer> <silent> <C-s> :<C-U>call go#def#StackPop(v:count1)<cr>
 
 
 ## Usage:
