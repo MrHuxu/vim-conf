@@ -12,12 +12,13 @@ Maintain the Vim configuration of mine.
 
 ## Install
 
-1. Install neccesary dependencies
+1. Remove `.vimrc` & `.vim` directory
+
+2. Install neccesary dependencies
 
         brew install fzf ctags
         brew install vim --with-lua --with-override-system-vi
 
-2. Remove `.vimrc` & `.vim` directory
 3. Clone this repo
 
         git clone https://github.com/MrHuxu/vim-conf.git && cd vim-conf
